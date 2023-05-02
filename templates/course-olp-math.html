@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="grafics/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="grafics/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="grafics/icons/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Олимпиадная математика CapyTangens</title>
+
+</head>
+<body>
+
+    <header class="header" style="padding-right: 34px; position: fixed;">
+        <div class="header__main">
+            <h1 style="color: #875018; font-size: 30px;">CapyTangens</h1>
+            <div class="header__burger" onclick="onClick()" style="cursor: pointer;">
+                <span class="header__line"></span>
+                <span class="header__line"></span>
+                <span class="header__line"></span>
+            </div>
+        </div>
+        
+        <nav class="header__dropdown">
+            <a class="header__menu" onclick="noClick()" href="index.html" style="color: #875018; font-size: 20px; font-weight: 400;">ГЛАВНАЯ</a>
+            <a class="header__menu" onclick="noClick()" href="contact.html" style="color: #875018; font-size: 20px; font-weight: 400;">КОНТАКТЫ</a>
+            <a class="header__menu" onclick="noClick()" href="#feedback" style="color: #875018; font-size: 20px; font-weight: 400;">ОБРАТНАЯ СВЯЗЬ</a>
+        </nav>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <div class="course-about">
+            <div class="course-about-left">
+                <div>
+                    <h1>Программа курса<br>Олимпиадная математика</h1>
+                    <p>Тут инфа про курс, типо какие мы клевые, суперские, деньги гони да</p>
+                </div>
+                <div style="margin-top: 5%;">
+                    <h1 style="margin-top: 25px; width: 90%; font-size: 35px; padding-top: 20px;">Преподаватель <br>по курсу</h1>
+                    <div class="tutor-img">
+                        <img src="grafics/tutors/ES.png" style="border-radius: 5px; margin-top: 20px;">
+                    </div>
+                    <h1 style="margin-top: 5px; width: 90%; font-size: 25px;">Егор Судовиков</h1>
+                    <p style="margin-top: 5px; font-size: 20px;">Владелец CapyTangens
+                    Преподаватель физики и математки для 10-11 классов
+                    Подготваливает к ЕГЭ на высокие баллы (около 14-17)</p>
+            
+                </div>
+            </div>
+            <span></span>
+
+            <div class="course-about-right">
+                <div class="course-block">
+                    <input id="math-ege-step-one" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-one" class="math-ege-step-header">Занятие 1</label>
+                    <div class="course-block-ul">
+                        <p>Проверка начальных знаний учиников, подбор нужного метода обучения, подходящих задач</p>
+                        <ul>
+                            <li>- Математика</li>
+                            <li>- Физика</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-block">
+                    <input id="math-ege-step-two" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-two" class="math-ege-step-header">Занятие 2</label>
+                    <div class="course-block-ul">
+                        <p>Проверка начальных знаний учиников, подбор нужного метода обучения, подходящих задач</p>
+                        <ul>
+                            <li>- Математика</li>
+                            <li>- Физика</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-block">
+                    <input id="math-ege-step-three" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-three" class="math-ege-step-header">Занятие 3</label>
+                    <div class="course-block-ul">
+                        <p>Проверка начальных знаний учиников, подбор нужного метода обучения, подходящих задач</p>
+                        <ul>
+                            <li>- Математика</li>
+                            <li>- Физика</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-block">
+                    <input id="math-ege-step-four" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-four" class="math-ege-step-header">Занятие 4</label>
+                    <div class="course-block-ul">
+                        <p>Проверка начальных знаний учиников, подбор нужного метода обучения, подходящих задач</p>
+                        <ul>
+                            <li>- Математика</li>
+                            <li>- Физика</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-block">
+                    <input id="math-ege-step-five" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-five" class="math-ege-step-header">Занятие 5</label>
+                    <div class="course-block-ul">
+                        <p>Проверка начальных знаний учиников, подбор нужного метода обучения, подходящих задач</p>
+                        <ul>
+                            <li>- Математика</li>
+                            <li>- Физика</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-block">
+                    <input id="math-ege-step-six" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-six" class="math-ege-step-header">Занятие 6</label>
+                    <div class="course-block-ul">
+                        <p>Проверка начальных знаний учиников, подбор нужного метода обучения, подходящих задач</p>
+                        <ul>
+                            <li>- Математика</li>
+                            <li>- Физика</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-block">
+                    <input id="math-ege-step-seven" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-seven" class="math-ege-step-header">Занятие 7</label>
+                    <div class="course-block-ul">
+                        <p>Проверка начальных знаний учиников, подбор нужного метода обучения, подходящих задач</p>
+                        <ul>
+                            <li>- Математика</li>
+                            <li>- Физика</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="feedback" id="feedback" style="margin-top: 200px;">
+            <div class="backblock">
+                <div class="mainblock">
+                    <div class="leftblock">
+                        <h1>ОСТАВЬТЕ ЗАЯВКУ, И МЫ ОТВЕТИМ НА ВОПРОСЫ</h1>
+                        <p>Позвоним с 8:00 до 22:00. <br>
+                            Задавайте любые вопросы, а мы ответим и поможем</p>
+                    </div>
+                    <div class="rightblock" id="rightblock">
+                        <div class="rightblock-div">
+                            <form name="rightblock">
+                                <div class="form-blocks">
+                                    <div class="rightblock-form">
+                                        <div class="form-block">
+                                            <input class="input-field" name="fio" placeholder="Укажите ФИО" required>
+                                        </div>
+                                        
+                                        <div class="form-block">
+                                            <input class="input-field" name="email" placeholder="Укажите e-mail" required>
+                                        </div>
+            
+                                        <div class="form-block">
+                                            <input class="input-field" name="phone" placeholder="Номер телефона" required>
+                                        </div>
+                                        <div class="form-block">
+                                            <input class="checkbox" type="checkbox" required> 
+                                            <p>Принимаю условия соглашения и политики конфиденциальности</p>
+                                        </div>
+                                    </div>
+                                    <input class="submit-btn" type="submit" value="Оставить заявку">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <nav style="justify-content: center; padding: 25px;">
+            <a href="index.html" style="margin-left: 10px; margin-right: 10px;">ГЛАВНАЯ</a>
+            <a href="#feedback" style="margin-left: 10px; margin-right: 10px;">ОБРАТНАЯ СВЯЗЬ</a>
+            <a href="contact.html" style="margin-left: 10px; margin-right: 10px;">КОНТАКТЫ</a>
+        </nav>
+        <div class="logo" style=" padding-top: 20px;">
+            <a href="index.html"><img src="grafics/logo.svg" alt="logo" class="graficlogo"></a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="grafics/inst.png"></a>
+            <a href="#"><img src="grafics/tg.png"></a>
+            <a href="#"><img src="grafics/tt.png"></a>
+            <a href="#"><img src="grafics/ytub.png"></a>
+            <a href="#"><img src="grafics/tw.png"></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

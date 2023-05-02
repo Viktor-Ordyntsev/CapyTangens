@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='grafics/icons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='grafics/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='grafics/icons/favicon-16x16.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>CapyTangens</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__main">
+            <h1 style="color: #875018; font-size: 30px;">CapyTangens</h1>
+            <div class="header__burger" onclick="onClick()" style="cursor: pointer;">
+                <span class="header__line"></span>
+                <span class="header__line"></span>
+                <span class="header__line"></span>
+            </div>
+        </div>
+        
+        <nav class="header__dropdown">
+            <a class="header__menu" onclick="noClick()" href="index.html" style="color: #875018; font-size: 20px; font-weight: 400;">ГЛАВНАЯ</a>
+            <a class="header__menu" onclick="noClick()" href="#curs" style="color: #875018; font-size: 20px; font-weight: 400;">КУРСЫ</a>
+            <a class="header__menu" onclick="noClick()" href="#tutors" style="color: #875018; font-size: 20px; font-weight: 400;">ПРЕПОДАВАТЕЛИ</a>
+            <a class="header__menu" onclick="noClick()" href="#feedback" style="color: #875018; font-size: 20px; font-weight: 400;">ОБРАТНАЯ СВЯЗЬ</a>
+            <a class="header__menu" onclick="noClick()" href="contact.html" style="color: #875018; font-size: 20px; font-weight: 400;">КОНТАКТЫ</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="about">
+            <div class="video">
+                <video autoplay loop muted id="videoId">
+                    <source src="video/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="aboutheader">
+                ДАВАЙ УЧИТЬСЯ !
+            </div>
+            <p class="about-text"><b>CapyTangens</b> - это онлайн школа математики и физики, для учеников 7-11 классов, где вам помогут подготовиться к экзаменам ОГЭ и ЕГЭ или узнать много нового и интересного!</p>
+        </div>
+        <div class="aboutgonext" style="color: #875018; font-size: 18px ;">
+            <a href="#down" style="text-decoration: none; color: #875018;">Вперед к знаниям <iconh>&darr;</iconh></a>
+        </div>
+        
+        <div class="advantages" id="down">
+            <h1>Что получит ребенок в нашей школе?</h1>
+            <div class="advantage-list">
+                <div class="advantage-block">
+                    <img src="grafics/icon.png" width="60px" height="60px">
+                    <div class="advantage">
+                        <h2>Развитие способностей</h2>
+                        <p>Развививаем ваш потенциал: достигай большего с каждым днём!</p>
+                    </div>
+                </div>
+                <div class="advantage-block-right">
+                    <img src="grafics/icon.png" width="60px" height="60px">
+                    <div class="advantage">
+                        <h2>Учеба - это интересно</h2>
+                        <p>Покажем что занятия могут быть интересными, а учиться может быть весело</p>
+                    </div>
+                </div>
+                <div class="advantage-block">
+                    <img src="grafics/icon.png" width="60px" height="60px">
+                    <div class="advantage">
+                        <h2>Специальная программа</h2>
+                        <p>Гибкая программа, которую подбирают специально под группу, учитывая способности каждого ученика</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="courses" id="curs">
+            <div class="courses-header">
+                <h1>Выбирай, что нужно именно тебе:</h1>
+            </div>
+            <div class="courses-list">
+
+                <div class="course">
+                    <h1>Подготовка к ЕГЭ</h1>
+                    <p1>Поможем показать максимум на экзамине, подготовим к поступлению</p1>
+                    <input id="math-ege-step-one" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-one" class="math-ege-step-header">Выбрать предмет</label>
+                    <div class="course-ul">
+                        <ul>
+                            <li><a href="course-ege-math.html">Математика</a></li>
+                            <li><a href="course-ege-phy.html">Физика</a></li>
+                        </ul>
+                    </div>
+                    <img src="grafics/puh.png">
+                </div>
+                <div class="course">
+                    <h1>Подготовка к ОГЭ</h1>
+                    <p1>Поможем показать максимум на экзамине, подготовим к поступлению</p1>
+                    <input id="math-ege-step-two" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-two" class="math-ege-step-header">Выбрать предмет</label>
+                    <div class="course-ul">
+                        <ul>
+                            <li><a href="course-oge-math.html">Математика</a></li>
+                            <li><a href="course-oge-phy.html">Физика</a></li>
+                        </ul>
+                    </div>
+                    <img src="grafics/puh.png">
+                </div>
+                <div class="course">
+                    <h1>Подготовка к <br>олимпиадам</h1>
+                    <p1>Разберем олимпиадные задачи, научим простым методам их решения, покажем, что самые сложные задания могут быть интересными</p1>
+                    <input id="math-ege-step-three" type="checkbox" name="math-ege-steps">
+                    <label for="math-ege-step-three" class="math-ege-step-header">Выбрать предмет</label>
+                    <div class="course-ul">
+                        <ul>
+                            <li><a href="course-olp-math.html">Математика</a></li>
+                            <li><a href="course-olp-phy.html">Физика</a></li>
+                        </ul>
+                    </div>
+                    <img src="grafics/puh.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="tutors" id="tutors">
+            <div class="tutors-about">
+                <h1>НАШИ <br> &nbsp;ПРЕПОДАВАТЕЛИ:</h1>
+                <p>Наши преподаватели расскажут, как подготовиться к экзаменам, помогут справиться со сложным заданием и победить на олимпиаде
+                <br><br>
+                Расскажут про подводные камни экзаменов и самые частые ошибки, и объяснят, как их избежать</p>
+            </div>
+
+            <span></span>
+
+            <div class="tutors-list">
+                <div class="tutor">
+                    <div class="tutor-img">
+                        <img src="grafics/tutors/ES.png">
+                    </div>
+                    <h1>Егор Судовиков</h1>
+                    <p>Владелец CapyTangens
+                        Преподаватель физики и математки для 10-11 классов
+                        Подготваливает к ЕГЭ на высокие баллы (около 14-17)</p>
+                </div>
+                <div class="tutor">
+                    <div class="tutor-img">
+                        <img src="grafics/tutors/MIA.png">
+                    </div>
+                    <h1>Игнат Митьков</h1>
+                    <p>Преподаватель математики и информатики для 7-11 классов
+                        Подготваливает к ОГЭ и ЕГЭ на высокие баллы (около 11-11)</p>
+                </div>
+                <div class="tutor">
+                    <div class="tutor-img">
+                        <img src="grafics/tutors/DA.jpg">
+                    </div>
+                    <h1>Леша Алексей</h1>
+                    <p>Какой-то чел,
+                        про которого я ничего не знаю, пусь будет Леха
+                        че, а ниче, нормальн общайся</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback" id="feedback">
+            <div class="backblock">
+                <div class="mainblock">
+                    <div class="leftblock">
+                        <h1>ОСТАВЬТЕ ЗАЯВКУ, И МЫ ОТВЕТИМ НА ВОПРОСЫ</h1>
+                        <p>Позвоним с 8:00 до 22:00. <br>
+                            Задавайте любые вопросы, а мы ответим и поможем</p>
+                    </div>
+                    <div class="rightblock" id="rightblock">
+                        <div class="rightblock-div">
+                            <form name="rightblock" action="mail.php" method="POST">
+                                <div class="form-blocks">
+                                    <div class="rightblock-form">
+                                        <div class="form-block">
+                                            <input class="input-field" name="fio" placeholder="Укажите ФИО" required>
+                                        </div>
+                                        
+                                        <div class="form-block">
+                                            <input class="input-field" name="email" placeholder="Укажите e-mail" required>
+                                        </div>
+            
+                                        <div class="form-block">
+                                            <input class="input-field" name="phone" placeholder="Номер телефона" required>
+                                        </div>
+                                        <div class="form-block">
+                                            <input class="checkbox" type="checkbox" required> 
+                                            <p>Принимаю условия соглашения и политики конфиденциальности</p>
+                                        </div>
+                                    </div>
+                                    <input class="submit-btn" type="submit" value="Оставить заявку" style="cursor: pointer;">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <nav style="justify-content: center; padding: 25px;">
+            <a href="index.html" style="margin-left: 10px; margin-right: 10px;">ГЛАВНАЯ</a>
+            <a href="#tutors" style="margin-left: 10px; margin-right: 10px;">ПРЕПОДАВАТЕЛИ</a>
+            <a href="#curs" style="margin-left: 10px; margin-right: 10px;">КУРСЫ</a>
+            <a href="#feedback" style="margin-left: 10px; margin-right: 10px;">ОБРАТНАЯ СВЯЗЬ</a>
+            <a href="contact.html" style="margin-left: 10px; margin-right: 10px;">КОНТАКТЫ</a>
+        </nav>
+        <div class="logo" style=" padding-top: 20px;">
+            <a href="index.html"><img src="grafics/logo.svg" alt="logo" class="graficlogo"></a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="grafics/inst.png"></a>
+            <a href="#"><img src="grafics/tg.png"></a>
+            <a href="#"><img src="grafics/tt.png"></a>
+            <a href="#"><img src="grafics/ytub.png"></a>
+            <a href="#"><img src="grafics/tw.png"></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
